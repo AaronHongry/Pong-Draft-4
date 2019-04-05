@@ -141,9 +141,11 @@ function calcDistance() {
       //If the final position is above the canvas
       if(final < 0) {
         distance = Math.abs(totalTravel + ball.y) - (compPaddle.height / 2);
+        console.log(final);
+        console.log(distance);
         //if the final position is going to be less than 0, move the paddle against it
         if(distance < 0) {
-          distance = 0;
+          distance = 1;
         }
       }
       //else if the final position is below the canvas
